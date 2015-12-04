@@ -1,0 +1,273 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+body {
+   line-height: 1.2;
+}
+ol { 
+   padding-left: 1.4em;
+   list-style: decimal;
+}
+ul {
+   padding-left: 1.4em;
+   list-style: square;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+} 
+/* end reset browser styles */
+
+
+/*my style*/
+
+body {
+  
+   background: #c7b39b url(images/backgr.png); /* Цвет фона и путь к файлу */
+}
+html, body {
+  height: 100%;
+}
+    .wrapper {
+
+      width:100%;
+      min-height: 100%;
+      margin-bottom: -120px; 
+      
+    }
+    .wrapper:after {
+          content: "";
+          display: block;
+          height: 120px;
+        }
+
+        .head {
+        	height: 120px;
+        	background-color: #eff3f7;
+        }
+            .header {
+            	max-width: 960px;
+            	margin: 0 auto;
+               overflow:hidden;
+            }
+            .logo {
+            	float: left;
+            	width: 250px;
+               height: 50px;
+               margin-top: 30px;
+            	
+            }
+            .soc {
+            	float: right;
+              margin-top: 30px;
+            }
+            .soc li {
+               display: inline-block;
+            }
+            .soc li .vk , .soc li .tw, .soc li .fb, .soc li .hb{
+               display: block;
+               width:50px;
+               height: 50px;
+               margin-left: 20px;
+            }
+
+            .vk {
+               background-image: url(images/vk0.png);
+               background-repeat: no-repeat;
+               background-position:  center center;
+            }
+
+            .vk:hover {
+               background-image: url(images/vk1.png);
+               background-repeat: no-repeat;
+               background-position:  center center;
+            }
+
+            .fb {
+               background-image: url(images/fb0.png);
+               background-repeat: no-repeat;
+               background-position:  center center;
+            }
+
+            .fb:hover {
+               background-image: url(images/fb1.png);
+               background-repeat: no-repeat;
+               background-position:  center center;
+            }
+
+            .tw {
+               background-image: url(images/tw0.png);
+               background-repeat: no-repeat;
+               background-position:  center center;
+            }
+
+            .tw:hover {
+               background-image: url(images/tw1.png);
+               background-repeat: no-repeat;
+               background-position:  center center;
+            }
+
+            .hb {
+               background-image: url(images/hb0.png);
+               background-repeat: no-repeat;
+               background-position:  center center;
+            }
+
+            .hb:hover {
+               background-image: url(images/hb1.png);
+               background-repeat: no-repeat;
+               background-position:  center center;
+            }
+
+
+        .osn {
+        	margin-top: 40px;
+          
+        }
+        
+
+
+        .footer {
+
+          width: 100%;
+          height: 120px;
+          background-color: #eff3f7;
+          color: rgb(149, 154, 168);
+        }
+
+        .footer2{
+          width: 930px;
+          margin: 0 auto;
+          
+        }
+        .footer3 {
+            margin-left: 310px;
+          padding-top: 50px;
+          font: 13px Arial;
+        }
+
+
+
+        .osn-2 {
+        	width: 960px;
+        	margin: 0 auto;
+            overflow:hidden;
+        }
+
+            .side-bar1 {
+               width: 250px;
+               float: left;
+            }
+
+            nav {
+               
+            }
+            .menu {
+                margin: 0;
+                padding: 0;
+            	list-style: none;
+
+            }
+            .menu  li {
+                
+            	
+            }
+            .menu  li a {
+                font: 21px Arial;
+                display: block;
+                color: #959aa8;
+            	background-color: rgb(239, 243, 247);
+            	padding: 23px;
+            	text-decoration: none;
+            	
+            }
+            .menu  li a:first-child {
+                border-radius: 5px 5px 0 0;
+            }
+
+            .menu  li a:visited {
+            	
+            	color: rgb(149, 154, 168);
+            }
+
+            .menu  li a:hover {
+            	
+            	border-bottom: 2px solid rgb(59, 168, 192);
+              color:#3ba8c0;
+            	
+            }
+
+            .menu  li a.active {
+            	background: rgb(59, 168, 192);
+            	color: rgb(255, 255, 255);
+            }
+
+        /*основное содержимое*/
+        .osn-body {
+            margin-left: 310px;
+        	color: rgb(149, 154, 168);
+        }
+        .osn-body-block {
+            background-color: rgb(239, 243, 247);
+        	margin-bottom: 25px;
+          overflow:hidden;
+        }
+        .osn-body-block h2 {
+            font: 22px Arial;
+            color: rgb(59, 168, 192);
+        	padding: 18px 0 22px 18px;
+        }
+        hr.underH2 {
+            width: 210px;
+          text-align: left;
+          border:none;
+          height: 2px;
+          color:rgb(59, 168, 192);
+          background-color:rgb(59, 168, 192);
+          margin: 0 auto 0 0;
+        }
+
+        .osn-body-block ul {
+            list-style: none;
+        }
+        .osn-body-block ul li {
+            padding: 20px 0 10px 100px;
+            font-size: 17px;
+            letter-spacing: -1px;
+            color:#4a545d;
+        }
+        .osn-body-block ul li:last-child {
+            margin-bottom: 27px;
+        }
+        .td1 {
+        	background: url(images/td1.png) no-repeat 33px center;
+        }
+        .td2 {
+        	background: url(images/td2.png) no-repeat 33px center;
+        }
+        .td2-2 {
+        	background: url(images/td3.png) no-repeat 43px center;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
