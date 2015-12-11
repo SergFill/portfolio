@@ -1,6 +1,6 @@
 > Как установить мой проект
 
-1. git clone  __  site
+1. git clone https://github.com/SergFill/portfolio.git site
 2. cd site
 3. bower i
 4. npm i
