@@ -1,0 +1,142 @@
+header.contact-me {
+	width: 100%;
+	height: 120px;
+	color: #FFF;
+	border-radius: 4px 4px 0 0;
+	background-color: #48CBE8;
+}
+
+header.contact-me h2 {
+	font: 300 25px 'fira_sansbook';
+    text-align: center;
+    margin-top: 40px;
+}
+
+	.after-header-contact-me {
+		width: 100%;
+    	height: 20px;
+    	background-color: #67DFFA;
+	}
+
+.form-wrapper {
+	font-family: 'fira_sanslight';
+    margin: 39px auto 0;
+    padding-bottom: 20px;
+    width: 402px;
+}
+
+form.form {
+    font-family: 'fira_sanslight';
+    font-size: 13px;
+    color: #48CBE8;
+}	
+.row {margin-bottom: 10px}
+
+	::-webkit-input-placeholder {color:#48CBE8; padding-left: 7px}
+	::-moz-placeholder          {color:#48CBE8; padding-left: 7px}/* Firefox 19+ */
+	:-moz-placeholder           {color:#48CBE8; padding-left: 7px}/* Firefox 18- */
+	:-ms-input-placeholder      {color:#48CBE8; padding-left: 7px}
+
+	:focus::-webkit-input-placeholder {color: transparent}
+	:focus::-moz-placeholder          {color: transparent}
+	:focus:-moz-placeholder           {color: transparent}
+	:focus:-ms-input-placeholder      {color: transparent}
+
+label {
+	font-size: 19px;
+	color: #4A545D;
+	font-family: 'fira_sanslight';
+}
+    label p{
+		margin: 0;
+		padding: 0;
+	 }
+    
+
+input.input {
+    border: 1px solid #48CBE8;
+    border-radius: 4px;
+    height: 34px;
+    width: 184px;
+}
+textarea.textarea {
+	border: 1px solid #48CBE8;
+    border-radius: 4px;
+    height: 180px;
+    line-height: 35px;
+    resize: none;
+    width: 396px;
+}
+
+input.input-label-cod {
+	border: 1px solid #48CBE8;
+    border-radius: 4px;
+    float: right;
+    height: 29px;
+    margin-top: 20px;
+    width: 189px;
+}
+
+.input-file__origin {
+	float: left;
+	margin: 10px 0;
+	opacity:.8;
+}
+.input-file__origin:hover {
+	
+	opacity:1;
+}
+
+.capcha {
+    background: url("../images/capcha.png") no-repeat center center;
+    border: 1px solid #48CBE8;
+    border-radius: 4px;
+    float: left;
+    height: 77px;
+    width: 189px;
+}
+
+button, textarea {
+    border: 0;
+}
+
+.submit1 {
+  background-color: #48CBE8;
+  border-radius: 5px;
+  bottom: 319px;
+  box-shadow: 0 2px 0 #3BA8C0;
+  color: #FFFFFF;
+  font-family: 'fira_sansbook';
+  font-size: 19px;
+  height: 31px;
+  width: 137px;
+}
+
+.submit2 {
+    background-color: #849DB5;
+    border-radius: 5px;
+    bottom: 319px;
+    box-shadow: 0 2px 0 #3BA8C0;
+    color: #FFFFFF;
+    font-family: 'fira_sansbook';
+    font-size: 19px;
+    height: 31px;
+    margin-bottom: 20px;
+    width: 125px;
+}
+.submit1:hover, .submit2:hover {
+    box-shadow: none;
+    position: relative;
+    top: 2px;
+    transition: all 0.2s ease 0s;
+}
+
+    /* позже доделаю header.contact-me:after {
+    	content: "";
+    	width: 100%;
+    	height: 20px;
+    	background-color: #48CBE8;
+    	border: solid 1px red;
+
+
+    }*/

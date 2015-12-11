@@ -1,0 +1,125 @@
+/* Общие стили для всех секций */
+.aboutbox {
+    background: #eff3f7;
+    border-radius: 4px;
+    margin-bottom: 26px;
+    overflow: hidden;
+}
+.aboutbox .aboutbox-header {
+	font-family: 'fira_sansmedium';
+	font-size: 27px;
+	font-weight: normal;
+	color: #3ba8c0;
+	border-bottom: 2px solid #3ba8c0;
+	margin: 0 0 23px 0;
+	padding: 13px 13px;
+	display: inline-block;
+}
+.aboutbox-body {
+	padding-bottom: 40px;
+}
+/* Конец Общие стили для всех секций */
+
+/*  Лицо */
+.aboutbox .image-wrap {
+	float: left;
+	margin-left: 55px;
+	margin-top: 18px;
+}
+.avatar-box {
+	width: 142px;
+	height: 142px;
+	border-radius: 50% 50%;
+	overflow: hidden;
+	border: 5px solid #3ba8c0;
+}
+/*  Конец Лицо */
+
+/*  анкетные данные */
+.worksheet-wrap {
+	float: right;
+	width: 400px;
+}
+.worksheet-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.worksheet-info {
+	float: left;
+	margin-left: 25px;
+	max-width: 220px;
+}
+.worksheet-item {
+	margin-bottom: 8px;
+}
+.worksheet-what {
+	font-family: 'fira_sansmedium';
+	font-size: 17px;
+	float: left;
+}
+.worksheet-info {
+	font-family: 17px normal 'fira_sansmedium';
+	overflow: hidden;	
+}
+/*  Конец анкетные данные */
+
+
+/* Ключевые навыки */
+.worksheet-info .skills-list {
+	width: 224px;
+	padding: 0;
+	list-style: none;
+}
+.skills-list .skill-item {
+	display: inline-block;
+	font-family: 'ProximaNovaCondensedSemibold';
+	background: #3ba8c0; /* Old browsers */
+    background: -webkit-linear-gradient(#3ba8c0 0%, #3ba8c0 50%, #2e8ca2 51%, #2e8ca2 100%);
+    background: -o-linear-gradient(#3ba8c0 0%, #3ba8c0 50%, #2e8ca2 51%, #2e8ca2 100%);
+    background: linear-gradient(#3ba8c0 0%, #3ba8c0 50%, #2e8ca2 51%, #2e8ca2 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ba8c0', endColorstr='#2e8ca2',GradientType=0 ); /* IE6-9 */
+	color: #FFF;
+	margin-right: 6px;
+	line-height: 1.2;
+	min-width: 40px;
+	border-radius: 4px;
+	text-align: center;
+	padding: 0 7px 2px 7px;
+}
+
+
+
+/* Конец Ключевые навыки */
+
+
+
+.aboutbox .aboutbox-item {
+	padding: 0 0 0 76px;
+	margin-bottom: 20px;
+	list-style: none;
+}
+.aboutbox .aboutbox-item:last-child {
+	margin-bottom: 0;
+}
+.aboutbox-item .where {
+	display: block;
+	font-family: 'fira_sansbook';
+	font-size: 16px;
+}
+.aboutbox-item .period {
+	display: block;
+	font-family: 'fira_sanslight';
+	font-size: 15px;
+	line-height: 1;
+}
+.td1 {
+	background: url(../images/td1.png) 9px center no-repeat;
+}
+.td2 {
+	background: url(../images/td2.png) 9px center no-repeat;
+}
+.td2-2 {
+	background: url(../images/td3.png) 17px center no-repeat;
+}
+

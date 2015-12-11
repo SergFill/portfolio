@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
     <head>
-    	<title></title>
+    	<title>Мое портфолио</title>
     	<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" type="text/css" href="css/fira.css">
 		<link rel="stylesheet" type="text/css" href="/bower/normalize-css/normalize.css">
-    	<link rel="stylesheet" type="text/css" href="style.css">
+    	<link rel="stylesheet" type="text/css" href="css/style.css">
+    	<link rel="stylesheet" type="text/css" href="css/about-me.css">
     	<script src="bower/modernizer/modernizr.js"></script>
     	
 		<!--[if lt IE 9]>
@@ -14,78 +16,155 @@
     </head>	
 	<body>
 		<div class="wrapper">
-			<div class="head">
-				<div class="header">
-					<div class="logo">
-                        <img src="images/logo.jpg" alt="">
+			<div class="main-content">
+				<header class="page-header">
+					<div class="container-big">
+						<a href="" class="header-logo-link">
+						    <img src="images/logo.jpg" height="44" width="243" alt="" class="logo-img">
+						        <span class="header-logo-text">Сайт портфолио</span>
+						    
+						</a>
+						<ul class="socials">
+							<li class="socials-item">
+								<a href="" class="socials-link vk">#</a>
+							</li>
+							<li class="socials-item">
+								<a href="" class="socials-link tw">#</a>
+							</li>
+							<li class="socials-item">
+								<a href="" class="socials-link fb">#</a>
+							</li>
+							<li class="socials-item">
+								<a href="" class="socials-link gt">#</a>
+							</li>
+						</ul>
 					</div>
-		 			<div class="soc">
-		 				<ul>
-		 					<li>
-		 						<a class="vk" href="#"></a>
-		 					</li>
-		 					<li>
-		 						<a class="tw" href="#"></a>
-		 					</li>
-		 					<li>
-		 						<a class="fb" href="#"></a>
-		 					</li>
-		 					<li>
-		 						<a class="hb" href="#"></a>
-		 					</li>
-		 				</ul>
-		 			</div>
-		 		</div>	
-			</div>	
-			<div class="osn">
-					<div class="osn-2">
-		                <aside class="side-bar1">
-						    <nav>
-								<ul class="menu">
-									<li><a class="active" href="#">Обо мне</a></li>
-									<li><a href="#">Мои работы</a></li>
-									<li><a href="#">Связаться со мной</a></li>
-								</ul>
-							</nav>
+				</header>
+				<div class="container">
+				    <!-- Сайдбар -->
+					<aside class="sidebar">
+						<nav class="navigation">
+							<ul class="navigation-list">
+								<li class="navigation-item current"><a href="/" class="navigation-link">Обо мне</a></li>
+								<li class="navigation-item"><a href="/my-work.html" class="navigation-link">Мои работы</a></li>
+								<li class="navigation-item"><a href="/contact-me.html" class="navigation-link">Связаться со мной</a></li>
+							</ul>
+						</nav>
+						<address class="contacts">
+						<h2 class="contact2">Контакты</h2>
+							<ul class="contacts-list">
+								<li class="contacts-item-1">
+									
+								    <a href="#mailto:seouspeh@gmail.com" class="contacts-mail">seouspeh@gmail.com</a></li>
+								<li class="contacts-item-2">
+									
+								    <a href="#" class="contacts-phone">89261551483</a></li>
+								<li class="contacts-item-3">
+									
+									<a href="#" class="contacts-skype">seriyf5</a></li>
+							</ul>
+						</address>
+					</aside>
+					<!-- Изменяемый контент -->
+					<div class="variable-content">
+						<section class="aboutbox">
+							<h2 class="aboutbox-header">Основная иноформация</h2>
+							<div class="aboutbox-body clearfix">
 
-		                </aside>
-		                <div class="osn-body">
-						    <div class="osn-body-block">
-							<h2>Опыт работы</h2>
-							<hr class="underH2" />
-							    <ul>
-							    	<li class="td1">"ИП Боровицкий" - Продавец дисков<br>
-									     Сентябрь 2005 - Август 2008</li>
-							    	<li class="td1">"ООО Системы безопасности" - Системный администратор<br>
-										Июнь 2008 - Июль 2010</li>
-							    </ul>
-                            </div>
+								<div class="image-wrap">
+									<div class="avatar-box">
+									    <img src="images/1-220.jpg" alt="Я" class="avatar">
+									</div>
+								</div>
 							
-							<div class="osn-body-block">
-							<h2>Образование</h2>
-							<hr class="underH2" />
-							<ul>
-							    	<li class="td2">Незаконченное высшее. СПБГУ ИТМО<br>
-									     Октябрь 2012 - по настоящее время</li>
-							    	<li class="td2-2">Курсы Loftblog.ru<br>
-										Ноябрь 2014 - по настоящее время</li>
-							    </ul>
-							
-							  
+								<div class="worksheet-wrap">
+									<ul class="worksheet-list">
+										<li class="worksheet-item clearfix">
+											<div class="worksheet-what">Меня зовут</div>
+											<div class="worksheet-info">Сергей Филиппов</div>
+										</li>
+										<li class="worksheet-item clearfix">
+											<div class="worksheet-what">Мой возраст:</div>
+											<div class="worksheet-info">32 года</div>
+										</li>
+										<li class="worksheet-item clearfix">
+											<div class="worksheet-what">Мой город:</div>
+											<div class="worksheet-info">Москва</div>
+										</li>
+										<li class="worksheet-item clearfix">
+											<div class="worksheet-what">Моя специализация:</div>
+											<div class="worksheet-info">SEO и знаю Frontend</div>
+										</li>
+										<li class="worksheet-item clearfix">
+											<div class="worksheet-what">Ключевые навыки:</div>
+											<div class="worksheet-info">
+	                                            <ul class="skills-list">
+	                                            	<li class="skill-item">html</li>
+	                                            	<li class="skill-item">css</li>
+	                                            	<li class="skill-item">javascript</li>
+	                                            	<li class="skill-item">gulp</li>
+	                                            	<li class="skill-item">git</li>
+	                                            </ul>
+											</div>
+										</li>
+									</ul>
+								</div>
 							</div>
-		                </div>  
-		            </div>    
 
-	            </div>
-	        </div>   
-            <footer class="footer">
-			<div class="footer2">
-			    <div class="footer3">
-			    "2016 Это мой сайт, пожалуйста, не копируйте и не воруйте его.
+						</section>
+
+						<section class="aboutbox">
+							<h2 class="aboutbox-header">Опыт работы</h2>
+							<div class="aboutbox-body clearfix">
+								<ul>
+								    	<li class="aboutbox-item td1">
+								    	    <span class="where">"ИП Боровицкий" - Продавец дисков</span>
+										    <span class="period">Сентябрь 2005 - Август 2008</span>
+										</li>
+								    	<li class="aboutbox-item td1">
+								    		<span class="where">"ООО Системы безопасности" - Системный администратор</span>
+											<span class="period">Июнь 2008 - Июль 2010</span>
+										</li>
+								</ul>
+							</div>
+						</section>
+
+						<section class="aboutbox">
+							<h2 class="aboutbox-header">Образование</h2>
+							<div class="aboutbox-body clearfix">
+								<ul>
+										<li class="aboutbox-item td2">
+										    <span class="where">Незаконченное высшее. СПБГУ ИТМО</span>
+											<span class="period">Октябрь 2012 - по настоящее время</span>
+										</li>
+										<li class="aboutbox-item td2-2">
+										    <span class="where">Курсы Loftblog.ru</span>
+											<span class="period">Ноябрь 2014 - по настоящее время</span>
+										</li>
+								</ul>
+							</div>
+						</section>
+
+							
+		                
+
+						
+					</div>
 				</div>
-			</div>	
-            </footer>  
+			</div>
+		</div>
+
+<footer class="page-footer">
+	<div class="container">
+		<div class="lock">
+		    <a href="/login.html" class="lock-inner">Войти</a>
+		</div>
+		<div class="copyright">@ 2015, Это сайт СФ, не стоит коировать и воровать его.</div>
+	</div>
+</footer>
+
         <script src="bower/jquery/dist/jquery.js"></script>	
         <script src="js/main.js"></script>
+        <script src="js/jquery.bpopup.min.js"></script>
 	</body>
 </html>
