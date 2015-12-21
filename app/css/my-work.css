@@ -86,3 +86,18 @@ figure .hidden-link{
 
 
 }
+
+/* ___________  // Добавить проект // ______________*/
+
+/* прячем модальное окно  */
+#new-project-popup {
+	background-color:  #eff3f7;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 25px 5px #999999;
+    color: #111111;
+    display: none;
+    min-width: 300px;
+    width: 310px;
+
+}
+

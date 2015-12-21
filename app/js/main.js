@@ -23,7 +23,7 @@
 
 
     $(document).ready(function() {
-	console.log("Я на главной");
+	console.log("Я main.js");
 
 	$('element_to_pop_up').bPopup({
 	    easing: 'easeOutBack', //uses jQuery easing plugin

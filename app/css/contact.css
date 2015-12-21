@@ -94,6 +94,7 @@ input.input-label-cod {
     float: left;
     height: 77px;
     width: 189px;
+    text-align: center;
 }
 
 button, textarea {

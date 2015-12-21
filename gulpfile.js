@@ -1,12 +1,12 @@
 var gulp = require("gulp"),
-	browserSync = require('browser-sync');
+	browserSync = require('browser-sync').create(),
+	reload = browserSync.reload;
 
 gulp.task('server', function(){
-	browserSync({
-		port: 9000,
-		server: {
-			baseDir: 'app'
-		}
+	browserSync.init({
+		notify:false,
+		port: 8000,
+		proxy: 'http://loftblog/app'
 	});
 });
 

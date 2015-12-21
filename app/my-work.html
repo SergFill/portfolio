@@ -5,10 +5,12 @@
     	<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link rel="stylesheet" type="text/css" href="css/fira.css">
-		<link rel="stylesheet" type="text/css" href="/bower/normalize-css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="bower/qtip2/jquery.qtip.css">
     	<link rel="stylesheet" type="text/css" href="css/style.css">
     	<link rel="stylesheet" type="text/css" href="css/about-me.css">
     	<link rel="stylesheet" type="text/css" href="css/my-work.css">
+    	<link rel="stylesheet" type="text/css" href="css/form-elements.css">
     	<script src="bower/modernizer/modernizr.js"></script>
     	
 		<!--[if lt IE 9]>
@@ -47,8 +49,8 @@
 						<nav class="navigation">
 							<ul class="navigation-list">
 								<li class="navigation-item"><a href="/" class="navigation-link">Обо мне</a></li>
-								<li class="navigation-item current"><a href="/my-work.html" class="navigation-link">Мои работы</a></li>
-								<li class="navigation-item"><a href="/contact-me.html" class="navigation-link">Связаться со мной</a></li>
+								<li class="navigation-item current"><a href="my-work.html" class="navigation-link">Мои работы</a></li>
+								<li class="navigation-item"><a href="contact-me.html" class="navigation-link">Связаться со мной</a></li>
 							</ul>
 						</nav>
 						<address class="contacts">
@@ -56,13 +58,13 @@
 							<ul class="contacts-list">
 								<li class="contacts-item-1">
 									
-								    <a href="#mailto:seouspeh@gmail.com" class="contacts-mail">seouspeh@gmail.com</a></li>
+								    <a href="mailto:seouspeh@gmail.com" class="contacts-mail">seouspeh@gmail.com</a></li>
 								<li class="contacts-item-2">
 									
-								    <a href="#" class="contacts-phone">89261551483</a></li>
+								    <a href="tel:+79261551483" class="contacts-phone">89261551483</a></li>
 								<li class="contacts-item-3">
 									
-									<a href="#" class="contacts-skype">seriyf5</a></li>
+									<a href="skype:seriyf5?chat" class="contacts-skype">seriyf5</a></li>
 							</ul>
 						</address>
 					</aside>
@@ -73,7 +75,7 @@
 							<div class="aboutbox-body clearfix  max-h">
 								<figure>
 								    <div class="hidden-wrap">
-	                                    <img class="my-work-icon" src="../images/google.png" alt="Google" width="185" height="130">
+	                                    <img class="my-work-icon" src="images/google.png" alt="Google" width="185" height="130">
 		                                    <div class="hidden-link-wrap">
 		                                        <a href="http://www.google.com/" class="hidden-link-img" >
 		                                            <span class="hidden-link">google</span>
@@ -86,7 +88,7 @@
                                 </figure>
                                 <figure>
 								    <div class="hidden-wrap">
-	                                    <img class="my-work-icon" src="../images/google.png" alt="Google" width="185" height="130">
+	                                    <img class="my-work-icon" src="images/google.png" alt="Google" width="185" height="130">
 		                                    <div class="hidden-link-wrap">
 		                                        <a href="http://www.google.com/" class="hidden-link-img" >
 		                                            <span class="hidden-link">google</span>
@@ -99,7 +101,7 @@
                                 </figure>
                                 <figure>
 								    <div class="hidden-wrap">
-	                                    <img class="my-work-icon" src="../images/google.png" alt="Google" width="185" height="130">
+	                                    <img class="my-work-icon" src="images/google.png" alt="Google" width="185" height="130">
 		                                    <div class="hidden-link-wrap">
 		                                        <a href="http://www.google.com/" class="hidden-link-img" >
 		                                            <span class="hidden-link">google</span>
@@ -112,7 +114,7 @@
                                 </figure>
                                 <figure>
 								    <div class="hidden-wrap">
-	                                    <img class="my-work-icon" src="../images/google.png" alt="Google" width="185" height="130">
+	                                    <img class="my-work-icon" src="images/google.png" alt="Google" width="185" height="130">
 		                                    <div class="hidden-link-wrap">
 		                                        <a href="http://www.google.com/" class="hidden-link-img" >
 		                                            <span class="hidden-link">google</span>
@@ -125,7 +127,7 @@
                                 </figure>
                                 <figure>
 								    <div class="hidden-wrap">
-	                                    <img class="my-work-icon" src="../images/google.png" alt="Google" width="185" height="130">
+	                                    <img class="my-work-icon" src="images/google.png" alt="Google" width="185" height="130">
 		                                    <div class="hidden-link-wrap">
 		                                        <a href="http://www.google.com/" class="hidden-link-img" >
 		                                            <span class="hidden-link">google</span>
@@ -138,9 +140,9 @@
                                 </figure>
                                 <figure>
 								    <div class="hidden-wrap">
-	                                    <img class="my-work-icon" src="../images/add-new-project.png" alt="add_new" width="185" height="130">
+	                                    <img class="my-work-icon" src="images/add-new-project.png" alt="add_new" width="185" height="130">
 		                                    <div class="hidden-link-wrap">
-		                                        <a href="http://www.google.com/" class="hidden-link-img" >
+		                                        <a id="add-new-item" href="#" class="hidden-link-img" >
 		                                            <span class="hidden-link">Add new project</span>
 		                                        </a>
 		                                   </div>
@@ -151,8 +153,50 @@
 							</div>
 						</section>
 
-							
-		                
+						<div id="new-project-popup">
+							<div class="modal-wrapper">
+								<div class="modal-header">
+								    <button type="button" class="b-close"></button>
+										<h4 class="modal-title">Добавление проекта</h4>
+								</div>
+								<div class="modal-body">
+								    <form id="add-new-project" role="form" class="form">
+								      <div class="server-mes error-mes"></div>
+								      <div class="server-mes success-mes"></div>
+								        <div class="form-group">
+											<label for="projectName" class="modal-name-project">Название проекта</label>
+											    <input id="projectName" name="projectName" type="text" placeholder="Название проекта" qtip-content="Вы не ввели название" qtip-position="left" class="input">
+										</div>
+										<div class="form-group">
+										    <div id="uploadfile" class="fileupload-wrapper">
+										    	<span class="label">Картинка проекта</span>
+										    	    <label class="fileupload-label">
+													    <input id="fileupload" type="file" name="files[]" class="fileupload">
+													    <input type="hidden" id="fileurl" name="fileurl">
+													</label> 
+													<input id="filename" name="filename" placeholder="Загрузите изображение" qtip-position="left" qtip-content="Изображение" class="input">   
+										    </div>
+												
+										</div>	    
+										<div class="form-group">	
+											<label for="url-project" class="label">URL проекта</label>
+											    <input id="url-project" name="url-project" type="text" placeholder="Добавьте ссылку" qtip-content="Вы не добавили ссылку" qtip-position="left" class="input">
+											
+										</div>	
+										<div class="form-group">
+											<label for="modal-project-desc" class="label">Описание</label>
+											    <textarea id="modal-project-desc" class="textarea" name="text" rows="3" placeholder="Пара слов о вашем проекте" qtip-position="left" qtip-content="Описание проекта обязательно"></textarea>
+										</div>	
+										<div class="btn-wrap">
+											<button id="modal_add_button" type="submit" class="btn">Добавить</button>
+										</div>
+											
+											
+									</form>
+								</div>
+							</div>
+						</div>
+
 
 						
 					</div>
@@ -171,6 +215,9 @@
 
         <script src="bower/jquery/dist/jquery.js"></script>	
         <script src="js/main.js"></script>
-        <script src="js/jquery.bpopup.min.js"></script>
+        <script src="bower/bPopup/jquery.bpopup.js"></script>
+        <script src="bower/qtip2/jquery.qtip.js"></script>
+        <script src="js/add_project.js"></script>
+        <script src="js/validation.js"></script>
 	</body>
 </html>

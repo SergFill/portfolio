@@ -5,11 +5,13 @@
     	<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link rel="stylesheet" type="text/css" href="css/fira.css">
-		<link rel="stylesheet" type="text/css" href="/bower/normalize-css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="bower/qtip2/jquery.qtip.css">
     	<link rel="stylesheet" type="text/css" href="css/style.css">
     	<link rel="stylesheet" type="text/css" href="css/about-me.css">
     	<link rel="stylesheet" type="text/css" href="css/contact.css">
     	<script src="bower/modernizer/modernizr.js"></script>
+    	
     	
 		<!--[if lt IE 9]>
                      <script src="html5shiv.js"></script>
@@ -47,8 +49,8 @@
 						<nav class="navigation">
 							<ul class="navigation-list">
 								<li class="navigation-item"><a href="/" class="navigation-link">Обо мне</a></li>
-								<li class="navigation-item"><a href="/my-work.html" class="navigation-link">Мои работы</a></li>
-								<li class="navigation-item current"><a href="/contact-me.html" class="navigation-link">Связаться со мной</a></li>
+								<li class="navigation-item"><a href="my-work.html" class="navigation-link">Мои работы</a></li>
+								<li class="navigation-item current"><a href="contact-me.html" class="navigation-link">Связаться со мной</a></li>
 							</ul>
 						</nav>
 						<address class="contacts">
@@ -59,10 +61,10 @@
 								    <a href="#mailto:seouspeh@gmail.com" class="contacts-mail">seouspeh@gmail.com</a></li>
 								<li class="contacts-item-2">
 									
-								    <a href="#" class="contacts-phone">89261551483</a></li>
+								    <a href="tel:+79261551483" class="contacts-phone">89261551483</a></li>
 								<li class="contacts-item-3">
 									
-									<a href="#" class="contacts-skype">seriyf5</a></li>
+									<a href="skype:seriyf5?chat" class="contacts-skype">seriyf5</a></li>
 							</ul>
 						</address>
 					</aside>
@@ -81,34 +83,35 @@
             <div id="element_to_pop_up">Подписка на сайт</div>
 							
 							<div class="form-wrapper">
-								<form action="post" class="form">
+								<form action="post" class="form" id="contact-me">
 									<div class="row clearfix">
 										<div class="pull-left">
 											<label class="input-label">
-												<p class="input-label__text">Имя:</p></label>
-												<input type="text" class="input" placeholder="Ваше имя">
-											
+												<p class="input-label__text">Имя:</p>
+												<input type="text" class="input" qtip-content="Вы не ввели ваше имя" qtip-position="left" placeholder="Ваше имя">
+											</label>
 										</div>
 										<div class="pull-right">
 											<label class="input-label">
-												<p class="input-label__text">E-mail:</p></label>
-												<input type="text" class="input" placeholder="Ваша почта">
-											
+												<p class="input-label__text">E-mail:</p>
+												<input type="text" class="input" qtip-content="Вы не ввели вашу эл. почту" qtip-position="right" placeholder="Ваша почта">
+											</label>
 										</div>
 									</div>
 
 									<div class="row clearfix">
 											<label for="textarea" class="input-label">Сообщение:
+											
+											<textarea name="textarea" id="" placeholder="Кратко в чем суть" qtip-content="Вы не ввели кратко в чем суть" qtip-position="right" class="textarea"></textarea>
 											</label>
-											<textarea name="textarea" id="" placeholder="Кратко в чем суть" class="textarea"></textarea>
 									</div>
 											<div class="row clearfix">
 												<div class="pull-right">
 													
-													    <label for="" class="input-file__btn"></label>
+													    <label for="" class="input-file__btn">
 													    
-													    <input id="input-file" type="file" class="input-file__origin" />
-													
+													         <input id="input-file" type="file" class="input-file__origin" />
+													    </label>
 												</div>
 											</div>
 											<div class="row clearfix">
@@ -116,9 +119,9 @@
 												<label class="write-cod">Введите код, указанный на картинке</label>
 												<div class="capcha"></div>
 												<div class="pull-right">
-													<label class="input-label-cod"></label>
-														<input type="text" class="input" placeholder="Введите код">
-													
+													<label class="input-label-cod">
+														<input type="text" qtip-content="Вы не ввели код" qtip-position="right" class="input" placeholder="Введите код">
+													</label>
 												</div>
 											</div>
 											<div class="row clearfix">
@@ -151,7 +154,12 @@
 </footer>
 
         <script src="bower/jquery/dist/jquery.js"></script>	
+        <script src="bower/qtip2/jquery.qtip.js"></script>
         <script src="js/main.js"></script>
         <script src="js/jquery.bpopup.min.js"></script>
+        <script src="js/contact_me.js"></script>
+        <script src="js/validation.js"></script>
+        
+
 	</body>
 </html>
